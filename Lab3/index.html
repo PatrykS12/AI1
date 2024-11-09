@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Strona</title>
+    <link rel="stylesheet" href="styl.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <script src="https://unpkg.com/leaflet-image@0.4.0/leaflet-image.js"></script>
+</head>
+<body>
+    <div id="kontener">
+        <div id="box-1"></div>
+        
+        <div id="box-zdjecie"></div>
+        
+        <button id="getLocation" onclick="getLocation()">Moja Lokalizacja</button>
+        <button id="getMap" onclick="captureSatelliteImage()">Pobierz mapę</button>
+        
+        <div id="box-puzzle" class="puzzle-grid" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        <div id="box-rozw" class="puzzle-grid" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+    </div>
+</body>
+<script src="skrypt.js"></script> 
+</html>

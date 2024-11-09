@@ -1,0 +1,48 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+#kontener {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+
+#box-1, #box-zdjecie {
+    width: 320px;
+    height: 320px;
+    border: 1px solid #ccc;
+    margin: 10px;
+}
+
+.puzzle-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    gap: 2px;
+    width: 320px;
+    height: 320px;
+    border: 1px solid #000;
+    position: relative;
+}
+
+.tile {
+    width: 78px;
+    height: 78px;
+    background-size: cover;
+    cursor: pointer;
+    border: 1px solid #ccc;
+}
+
+.grid-cell {
+    width: 78px;
+    height: 78px;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+    position: relative;
+}
+
+.tile.dragging {
+    opacity: 0.5;
+}
