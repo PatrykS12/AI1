@@ -1,0 +1,165 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #1c1f26;
+    color: #ffffff;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 20px;
+}
+
+ul.list {
+    list-style: none;
+    width: 250px;
+    background-color: #333;
+    padding: 20px;
+    border-radius: 10px;
+    flex-shrink: 0;
+    top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+ul.list a {
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #444;
+    padding: 10px 15px;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+
+ul.list a:hover {
+    background-color: #61dafb;
+    color: #282c34;
+}
+
+header {
+    width: 100%;
+    text-align: center;
+    padding: 20px 0;
+    background-color: #282c34;
+    border-radius: 10px;
+}
+
+header h1 {
+    font-size: 2.5em;
+    color: #61dafb;
+}
+
+.main-content {
+    flex-grow: 1;
+    background-color: #1c1f26;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.card {
+    background-color: #282c34;
+    padding: 20px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+h2 {
+    color: #61dafb;
+    font-size: 2em;
+    margin-bottom: 15px;
+}
+
+h3 {
+    color: #e63946;
+    font-size: 1.4em;
+    margin-bottom: 10px;
+}
+
+p {
+    margin-bottom: 20px;
+    font-size: 1.1em;
+}
+
+img.photo {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    border: 2px solid #61dafb;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    background-color: #333;
+    color: #fff;
+    border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    ul.list {
+        width: 100%;
+        position: relative;
+        top: 0;
+        flex-direction: row;
+        justify-content: space-around;
+        padding: 10px;
+    }
+
+    .main-content {
+        margin-left: 0;
+        padding: 20px;
+    }
+
+    h2 {
+        font-size: 1.5em;
+    }
+
+    h3 {
+        font-size: 1.2em;
+    }
+}
+
+@media (max-width: 480px) {
+    ul.list {
+        flex-direction: column;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    h2 {
+        font-size: 1.3em;
+    }
+
+    h3 {
+        font-size: 1.1em;
+    }
+
+    p {
+        font-size: 0.9em;
+    }
+
+    footer {
+        font-size: 0.9em;
+    }
+}
