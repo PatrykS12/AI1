@@ -1,0 +1,11 @@
+{
+  "background_color": "#FFF",
+  "display": "standalone",
+  "name": "Patryk 53782",
+  "short_name": "Patryk 53782",
+  "version": "pl.edu.zut.wi.sp53782",
+  "description": "Weather App",
+  "author": "Patryk Sujewicz",
+  "icons": [],
+  "start_url": "weather.html"
+}
